@@ -34,8 +34,8 @@ if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
     data = {
         "product_type": "Phone",
-        "quantity": 10,
+        "quantity": 100000,
         "unit_price": 232.00
     }
     data = json.dumps(data).encode("utf-8")
-    publish_message(project="your_project_id", topic="order_req", message=data, event_type="OrderReq")
+    publish_message(project="adalabs-413011", topic="order_req", message=data, event_type="OrderReq")

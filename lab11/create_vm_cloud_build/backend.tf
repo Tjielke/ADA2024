@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "adatemp"
+    bucket = "lab_mei"
     prefix = "env/dev"
   }
 }
